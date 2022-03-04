@@ -1,0 +1,20 @@
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: #eaeaea;
+    &__icon{
+        position: relative;
+        right: 15px;
+    }
+    p{
+        font-weight: 500;
+    }
+}
+
+.explore{
+    background-color: #f3f3f3;
+    em{
+        font-weight: 300;
+    }
+}

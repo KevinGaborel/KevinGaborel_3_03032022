@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 14px 0;
+  margin-bottom: 3px;
+  box-shadow: 0 1px 5px #a5a5a5;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #eaeaea;
+}
+.location__icon {
+  position: relative;
+  right: 15px;
+}
+.location p {
+  font-weight: 500;
+}
+
+.explore {
+  background-color: #f3f3f3;
+}
+.explore em {
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.title-restaurant {
+  font-family: "Shrikhand", cursive;
+}
+
+h1, h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+em {
+  font-style: normal;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.explore button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  color: white;
+  font-size: 15px;
+  padding: 15px 20px;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
