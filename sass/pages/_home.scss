@@ -13,8 +13,93 @@
 }
 
 .explore{
-    background-color: #f3f3f3;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
     em{
         font-weight: 300;
+    }
+    h1, em, button{
+        margin: 10px 0;
+    }
+}
+
+.perform{
+    margin: 60px 20px;
+}
+.step-perform{
+    @include perform-list-number;
+    &__card{
+        background-color: $background-color;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        margin: 30px 0 10px 10px;
+        height: 60px;
+        @include card-shadow;
+        font-weight: 500;
+        font-size: 17px;
+        justify-content: center;
+        i{
+            color: gray;
+            font-size: 20px;
+            position: absolute;
+            left: 60px;
+        }
+    }
+}
+
+.restaurant{
+    padding: 60px 20px;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    ul{
+        display: flex;
+        flex-direction: column;
+        .restaurant-card{
+            background-color: white;
+            border-radius: 20px;
+            margin: 15px 0px;
+            @include card-shadow;
+            &__top{
+                height: $restaurant-img-card-height;
+                &__tag-new{
+                    border-radius: 3px;
+                    color: #357565;
+                    background-color: $tertiary-color;
+                    position: relative;
+                    left: 75%;
+                    bottom: 167px;
+                    padding: 5px 10px;
+                    font-weight: 500;
+                    font-size: 13px;
+    
+                }
+                img{
+                    width: 100%;
+                    height: $restaurant-img-card-height;
+                    object-fit: cover;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
+
+            }
+            &__bottom{
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                h3, p{
+                    margin: 0;
+                }
+                i{
+                    font-size: 25px;
+                    margin-right: 5px;
+                }
+            }
+        }
     }
 }

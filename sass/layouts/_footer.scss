@@ -1,0 +1,14 @@
+footer{
+    background-color: rgb(24, 24, 24);
+    padding: 30px 20px;
+    color: white;
+    .title-restaurant{
+        font-weight: 400;
+    }
+    .footer-list__element{
+        line-height: 30px;
+        i{
+            margin-right: 10px;
+        }
+    }
+}
