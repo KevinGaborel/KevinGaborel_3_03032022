@@ -3,36 +3,9 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $background-color: #f3f3f3;
 $restaurant-img-card-height: 180px;
+$size-heart: 20px;
+$size-btn-number: 25px;
 
 $list-number: ("1", "2", "3");
 
-@mixin button-pink-gradient {
-    background: linear-gradient($secondary-color, $primary-color);
-    border-radius: 25px;
-    color: white;
-    font-size: 15px;
-    padding: 15px 20px;
-    border: none;
-}
-
-@mixin card-shadow {
-    box-shadow: 1px 1px 10px rgb(184, 184, 184);
-}
-
-@mixin perform-list-number {
-    @each $number in $list-number{
-        &__card:nth-child(#{$number})::before{
-            content: $number;
-            background-color: $primary-color;
-            border-radius: 100%;
-            height: 25px;
-            width: 25px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            position: absolute;
-            left: 16px;
-        }
-    }
-}
+$break: (tablet: 700px, desktop: 1000px);

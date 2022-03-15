@@ -1,0 +1,33 @@
+@mixin shadow($color: rgb(184, 184, 184)) {
+    box-shadow: 1px 1px 10px $color;
+}
+
+@mixin perform-list-number {
+    @each $number in $list-number{
+        &__card:nth-child(#{$number})::before{
+            content: $number;
+            background-color: $primary-color;
+            border-radius: 100%;
+            height: $size-btn-number;
+            width: $size-btn-number;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            left: calc($size-btn-number * -1 / 2);
+        }
+    }
+}
+
+@mixin tablet-only{
+    @media screen and (min-width: map-get($break, tablet)) {
+        @content;
+    }
+}
+
+@mixin desktop-only{
+    @media screen and (min-width: map-get($break, desktop)) {
+        @content;
+    }
+}

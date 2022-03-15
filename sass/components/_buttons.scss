@@ -1,5 +1,46 @@
-.explore{
-    button{
-        @include button-pink-gradient;
+@mixin btn-primary {
+    background: linear-gradient($secondary-color, $primary-color);
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    padding: 15px 20px;
+    border: none;
+    @include shadow;
+    &:hover{
+        background: linear-gradient(lighten($secondary-color, 2%), lighten($primary-color, 2%));
+        transition-property: box-shadow;
+        transition-duration: 0.3s;
+        @include shadow(rgb(124, 124, 124));
+    }
+}
+
+@mixin btn-heart{
+    padding: 0;
+    cursor: pointer;
+    width: $size-heart;
+    height: $size-heart;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    &:hover{
+        .heart-full{
+            transform-origin: center;
+            transition-duration: 2s;
+            transform: scale(1);
+        }
+    }
+    .heart-full{
+        color: $primary-color;
+        transform: scale(0);
+    }
+    .heart-empty{
+        position: absolute;
+    }
+    .heart-empty, .heart-full{
+        font-size: $size-heart;
     }
 }

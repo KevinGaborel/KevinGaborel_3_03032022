@@ -8,6 +8,9 @@
 h1 , h2{
     font-size: 25px;
     margin: 0;
+    @include desktop-only{
+        text-align: center;
+    }
 }
 em{
     font-style: normal;
@@ -16,6 +19,9 @@ em{
 ul, ol{
     list-style: none;
     padding: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
 }
 a{
     text-decoration: none;

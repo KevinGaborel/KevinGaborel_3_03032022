@@ -1,6 +1,8 @@
 @import "./utils/variables";
+@import "./utils/animations";
+@import "./utils/mixins";
+@import "./base/normes";
+@import "./components/buttons";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./pages/home";
-@import "./base/normes";
-@import "./components/buttons";
