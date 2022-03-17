@@ -14,7 +14,7 @@
     }
 }
 
-@mixin btn-heart{
+@mixin btn-heart($size-heart){
     padding: 0;
     cursor: pointer;
     width: $size-heart;

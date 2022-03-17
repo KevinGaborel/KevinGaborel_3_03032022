@@ -15,30 +15,167 @@
     <script src="https://kit.fontawesome.com/8c3f32533e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header class="header">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <img class="header__logo" src="../img/logo/ohmyfood@2x.svg" alt="Le logo ohmyfood">
     </header>
 
-    <main class="restaurant">
-        <h2>Restaurants</h2>
-        <ul>
-            <a href="" class="restaurant-card">
-                <li>
-                    <article>
-                         
-                    </article>
-                </li>
-            </a>
-        </ul>
+    <img class="img-top" src="../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Un des plats du restaurant 'à la française'">
+
+    <main class="main-restaurant">
+        <div class="main-restaurant__title">
+            <h1 class="title-restaurant">À la française</h1>
+            <button>
+                <i class="fa-regular fa-heart heart-empty"></i>
+                <i class="fa-solid fa-heart heart-full"></i>
+            </button>
+        </div>
+
+        <div class="main-restaurant__menu">
+            <h2>Entrées</h2>
+            <ul class="card-list">
+
+                <a href="#">
+                    <li class="card-menu">
+                        <div class="card-menu__infos">
+                            <div class="card-menu__infos__describe">
+                                <h3>Tartare de poulpe acidulé</h3>
+                                <p>Aux zestes d'orange</p>
+                            </div>
+                            <div class="card-menu__infos__price">25€</div>
+                        </div>
+                        <div class="card-menu__checked"><i class="fa-solid fa-circle-check"></i></div>
+                    </li>
+                </a>
+
+                <a href="#">
+                    <li class="card-menu">
+                        <div class="card-menu__infos">
+                            <div class="card-menu__infos__describe">
+                                <h3>Velouté de légumes d'antan</h3>
+                                <p>Carotte, panais, topinambour</p>
+                            </div>
+                            <div class="card-menu__infos__price">35€</div>
+                        </div>
+                        <div class="card-menu__checked"><i class="fa-solid fa-circle-check"></i></div>
+                    </li>
+                </a>
+
+                <a href="#">
+                    <li class="card-menu">
+                        <div class="card-menu__infos">
+                            <div class="card-menu__infos__describe">
+                                <h3>Soupe à l'oignon</h3>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="card-menu__infos__price">20€</div>
+                        </div>
+                        <div class="card-menu__checked"><i class="fa-solid fa-circle-check"></i></div>
+                    </li>
+                </a>
+
+            </ul>
+
+            <h2>Plats</h2>
+            <ul class="card-list">
+
+                <a href="#">
+                    <li class="card-menu">
+                        <div class="card-menu__infos">
+                            <div class="card-menu__infos__describe">
+                                <h3>Coquilles Saint-Jacques</h3>
+                                <p>Accompagnées d'une purée de panais</p>
+                            </div>
+                            <div class="card-menu__infos__price">40€</div>
+                        </div>
+                        <div class="card-menu__checked"><i class="fa-solid fa-circle-check"></i></div>
+                    </li>
+                </a>
+
+                <a href="#">
+                    <li class="card-menu">
+                        <div class="card-menu__infos">
+                            <div class="card-menu__infos__describe">
+                                <h3>Magret de canard</h3>
+                                <p>Et parmentier de pommes de terre</p>
+                            </div>
+                            <div class="card-menu__infos__price">35€</div>
+                        </div>
+                        <div class="card-menu__checked"><i class="fa-solid fa-circle-check"></i></div>
+                    </li>
+                </a>
+
+                <a href="#">
+                    <li class="card-menu">
+                        <div class="card-menu__infos">
+                            <div class="card-menu__infos__describe">
+                                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                            </div>
+                            <div class="card-menu__infos__price">44€</div>
+                        </div>
+                        <div class="card-menu__checked"><i class="fa-solid fa-circle-check"></i></div>
+                    </li>
+                </a>
+
+            </ul>
+            
+            <h2>Desserts</h2>
+                <ul class="card-list">
+    
+                    <a href="#">
+                        <li class="card-menu">
+                            <div class="card-menu__infos">
+                                <div class="card-menu__infos__describe">
+                                    <h3>Pétales de violettes glacés</h3>
+                                    <p>Et purée de noisettes</p>
+                                </div>
+                                <div class="card-menu__infos__price">18€</div>
+                            </div>
+                            <div class="card-menu__checked"><i class="fa-solid fa-circle-check"></i></div>
+                        </li>
+                    </a>
+    
+                    <a href="#">
+                        <li class="card-menu">
+                            <div class="card-menu__infos">
+                                <div class="card-menu__infos__describe">
+                                    <h3>Fondant au chocolat</h3>
+                                    <p>Revisité</p>
+                                </div>
+                                <div class="card-menu__infos__price">22€</div>
+                            </div>
+                            <div class="card-menu__checked"><i class="fa-solid fa-circle-check"></i></div>
+                        </li>
+                    </a>
+    
+                    <a href="#">
+                        <li class="card-menu">
+                            <div class="card-menu__infos">
+                                <div class="card-menu__infos__describe">
+                                    <h3>Millefeuille croustillant</h3>
+                                    <p>Myrtilles et pâte d’amande</p>
+                                </div>
+                                <div class="card-menu__infos__price">23€</div>
+                            </div>
+                            <div class="card-menu__checked"><i class="fa-solid fa-circle-check"></i></div>
+                        </li>
+                    </a>
+    
+                </ul>
+        </div>
+
+
     </main>
 
     <footer>
         <h2 class="title-restaurant">ohmyfood</h2>
         <ul class="footer-list">
-            <li class="footer-list__element"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
-            <li class="footer-list__element"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
-            <li class="footer-list__element">Mentions légales</li>
-            <li class="footer-list__element">Contact</li>
+            <a href="#"><li class="footer-list__element"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li></a>
+            <a href="#"><li class="footer-list__element"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li></a>
+            <a href="#"><li class="footer-list__element">Mentions légales</li></a>
+            <a href="#"><li class="footer-list__element">Contact</li></a>
         </ul>
     </footer>
 </body>

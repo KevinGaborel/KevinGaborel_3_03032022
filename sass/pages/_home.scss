@@ -1,7 +1,7 @@
 .loader-container{
     top: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +171,7 @@
             margin: 0;
         }
         button{
-            @include btn-heart;
+            @include btn-heart($little-heart);
         }
     }
 }
