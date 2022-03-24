@@ -8,9 +8,6 @@
 h1 , h2{
     font-size: 25px;
     margin: 0;
-    @include desktop-only{
-        text-align: center;
-    }
 }
 em{
     font-style: normal;

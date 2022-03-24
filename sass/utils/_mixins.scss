@@ -20,6 +20,27 @@
     }
 }
 
+
+$delay-animation: 0.5s; /*Délais de l'animation*/
+$list-number: 3; /* Le nombre de listes */
+$list-items: 4; /* Nombre d'éléments par listes */
+$delay-animation-list: ($delay-animation * $list-items); /* Délais d'animation par colone */
+
+@mixin animation-card{
+  @for $card-list from 1 through $list-number {
+    > div:nth-child(#{$card-list}){
+        @for $card from 1 through $list-items {
+            ul > a:nth-child(#{$card}) .card-menu{
+                $list-offset: $card-list - 1; /* décalage par liste */
+                $animation-offset: $list-offset * $delay-animation-list; /* décalage de la liste * (le nbr d'elts * le délais de l'animation) */
+                opacity: 0;
+                animation: 0.3s linear forwards ($animation-offset + ($card * ($delay-animation))) show-card;
+            }
+        }
+    }
+  }
+}
+
 @mixin tablet-only{
     @media screen and (min-width: map-get($break, tablet)) {
         @content;
