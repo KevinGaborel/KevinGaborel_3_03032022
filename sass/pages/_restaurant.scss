@@ -1,4 +1,14 @@
+.container-img-top{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .img-top{
+    @include desktop-only{
+        width: 80%;
+    }
+
     object-fit: cover;
     width: 100%;
     height: 250px;
@@ -7,6 +17,10 @@
 }
 
 .main-restaurant{
+    @include desktop-only{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     @include tablet-only{
         padding: 40px 30px 70px 30px;
     }

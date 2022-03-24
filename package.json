@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/ "
   },
   "repository": {
     "type": "git",
@@ -12,8 +13,14 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/KevinGaborel/KevinGaborel_3_03032022/issues"
   },
-  "homepage": "https://github.com/KevinGaborel/KevinGaborel_3_03032022#readme"
+  "homepage": "https://github.com/KevinGaborel/KevinGaborel_3_03032022#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0"
+  }
 }
