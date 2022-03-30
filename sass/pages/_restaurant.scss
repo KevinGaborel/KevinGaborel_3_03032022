@@ -182,6 +182,7 @@
     
     &:hover{
         overflow: visible;
+        cursor: pointer;
         .card-menu__infos__describe p, .card-menu__infos__describe h3{
             width: 50vw;
             @include big-phone-only{

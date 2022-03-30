@@ -30,7 +30,7 @@ $delay-animation-list: ($delay-animation * $list-items); /* Délais d'animation 
   @for $card-list from 1 through $list-number {
     > div:nth-child(#{$card-list}){
         @for $card from 1 through $list-items {
-            ul > a:nth-child(#{$card}) .card-menu{
+            ul > .card-menu:nth-child(#{$card}) {
                 $list-offset: $card-list - 1; /* décalage par liste */
                 $animation-offset: $list-offset * $delay-animation-list; /* décalage de la liste * (le nbr d'elts * le délais de l'animation) */
                 opacity: 0;
