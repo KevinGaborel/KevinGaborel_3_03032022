@@ -141,6 +141,7 @@
         flex-direction: column;
     }
 }
+
 .restaurant-card{
     @include tablet-only{
         width: 45%;
@@ -169,7 +170,6 @@
             padding: 5px 10px;
             font-weight: 500;
             font-size: 13px;
-
         }
         img{
             width: 100%;
@@ -178,7 +178,6 @@
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
-
     }
     &__bottom{
         padding: 20px;

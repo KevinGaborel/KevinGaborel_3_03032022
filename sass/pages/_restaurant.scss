@@ -91,6 +91,7 @@
                 margin: 40px 0;
             }
         }
+        
         h2::after{
             content: '';
             position: absolute;
@@ -143,13 +144,25 @@
             align-self: end;
             margin-right: 10px;
         }
+        h3, p{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 64vw;
+            @include big-phone-only{
+                width: 73vw;
+            }
+            @include tablet-only{
+                width: 419px;
+            }
+        }
         h3{
             font-size: 17px;
             font-weight: 600;
-            margin: 0;
+            margin: 0 10px 0 0;
         }
         p{
-            margin: 0;
+            margin: 0 10px 0 0;
             font-size: 15px;
         }
     }
@@ -169,6 +182,15 @@
     
     &:hover{
         overflow: visible;
+        .card-menu__infos__describe p, .card-menu__infos__describe h3{
+            width: 50vw;
+            @include big-phone-only{
+                width: 58vw;
+            }
+            @include tablet-only{
+                width: 359px;
+            }
+        }
         .card-menu__checked{
             width: 70px;
             transition-duration: 0.3s;

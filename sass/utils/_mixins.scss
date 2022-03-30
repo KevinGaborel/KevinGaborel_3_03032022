@@ -52,3 +52,9 @@ $delay-animation-list: ($delay-animation * $list-items); /* Délais d'animation 
         @content;
     }
 }
+
+@mixin big-phone-only{
+    @media screen and (min-width: map-get($break, big-phone)) {
+        @content;
+    }
+}

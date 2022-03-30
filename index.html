@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/prefixed/style.css">
 
     <script src="https://kit.fontawesome.com/8c3f32533e.js" crossorigin="anonymous"></script>
 </head>
@@ -25,10 +25,10 @@
 
     <div class="border-gradient"></div>
 
-    <section class="location">
+    <div class="location">
         <i class="fa-solid fa-location-dot location__icon"></i>
         <p>Paris, Belleville</p>
-    </section>
+    </div>
 
     <section class="explore">
         <h1>Réservez le menu qui vous convient</h1>
@@ -56,19 +56,19 @@
                             <span class="restaurant-card__top__tag-new">Nouveau</span>
                         </div>
                     </a>
-                        <div class="restaurant-card__bottom">
-                            <div>
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
-                            </div>
-                            <button>
-                                <i class="fa-regular fa-heart heart-empty"></i>
-                                <i class="fa-solid fa-heart heart-full"></i>
-                            </button>
-                            
+                    <div class="restaurant-card__bottom">
+                        <div>
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
                         </div>
-                    </article>
-                </li>
+                        <button>
+                            <i class="fa-regular fa-heart heart-empty"></i>
+                            <i class="fa-solid fa-heart heart-full"></i>
+                        </button>
+                        
+                    </div>
+                </article>
+            </li>
                 <li class="restaurant-card">
                     <article>
                         <a href="laNoteEnchantee.html">
@@ -133,10 +133,10 @@
     <footer>
         <h2 class="title-restaurant">ohmyfood</h2>
         <ul class="footer-list">
-            <a href="#"><li class="footer-list__element"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li></a>
-            <a href="#"><li class="footer-list__element"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li></a>
-            <a href="#"><li class="footer-list__element">Mentions légales</li></a>
-            <a href="#"><li class="footer-list__element">Contact</li></a>
+            <a href=""><li class="footer-list__element"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li></a>
+            <a href=""><li class="footer-list__element"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li></a>
+            <a href=""><li class="footer-list__element">Mentions légales</li></a>
+            <a href="mailto:ohmyfood@exemple.com"><li class="footer-list__element">Contact</li></a>
         </ul>
     </footer>
 </body>
