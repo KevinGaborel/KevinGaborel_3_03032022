@@ -2,8 +2,11 @@
     box-shadow: 1px 1px 10px $color;
 }
 
+
+$list-number-perform: ("1", "2", "3");
+
 @mixin perform-list-number {
-    @each $number in $list-number{
+    @each $number in $list-number-perform{
         &__card:nth-child(#{$number})::before{
             content: $number;
             background-color: $primary-color;
